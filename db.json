@@ -1,0 +1,40 @@
+{
+  "CardList": [
+    {
+      "id": 1,
+      "name": "Ancient Lamp",
+      "attribute": "Wind",
+      "attributeImage": "https://www.db.yugioh-card.com/yugiohdb/external/image/parts/attribute/attribute_icon_wind.png",
+      "level": 3,
+      "image": "https://uploads4.yugioh.com/card_images/2638/detail/4659.jpg?1385126697",
+      "type": "Spellcaster / Effect",
+      "cardDescription": "During your Main Phase: You can Special Summon \"La Jinn the Mystical Genie of the Lamp\" from your hand. This card must be face-up on the field to activate and to resolve this effect. Before damage calculation, if this card is being attacked by an opponent's monster, and was face-down at the start of the Damage Step: You can target 1 monster your opponent controls, except the attacking monster; change the attack target to that opponent's monster and perform damage calculation.",
+      "atk": 900,
+      "def": 1400
+    },
+    {
+      "id": 2,
+      "name": "Armored Lizard",
+      "attribute": "Earth",
+      "attributeImage": "https://www.db.yugioh-card.com/yugiohdb/external/image/parts/attribute/attribute_icon_earth.png",
+      "level": 4,
+      "image": "https://uploads1.yugioh.com/card_images/1896/detail/2261.jpg?1385102591",
+      "type": "Reptile / Normal",
+      "cardDescription": "A lizard with a very tough hide and a vicious bite.",
+      "atk": 1500,
+      "def": 1200
+    },
+    {
+      "name": "Armored Zombie",
+      "attribute": "Dark",
+      "image": "https://uploads3.yugioh.com/card_images/4677/detail/Armored-Zombie-FL.jpg?1393436766",
+      "attributeImage": "https://www.db.yugioh-card.com/yugiohdb/external/image/parts/attribute/attribute_icon_dark.png",
+      "level": 3,
+      "type": "Zombie / Normal",
+      "cardDescription": "This warrior blindly swings a deadly blade with devastating force.",
+      "atk": 1500,
+      "def": 0,
+      "id": 3
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+<div class="container">
+  <h2>Update Card</h2>
+  <form [formGroup]="updateCardForm" (ngSubmit)="onSubmit()">
+    <div class="form-line">
+      <div class="form-field">
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          formControlName="name"
+        />
+      </div>
+
+      <div class="form-field">
+        <label for="attribute">Attribute:</label>
+        <input
+          type="text"
+          formControlName="attribute"
+        />
+      </div>
+    </div>
+
+    <div class="form-line">
+      <div class="form-field">
+        <label for="image">Image URL:</label>
+        <input
+          type="url"
+          formControlName="image"
+        />
+      </div>
+
+      <div class="form-field">
+        <label for="attributeImage">Attribute Image URL:</label>
+        <input
+          type="url"
+          formControlName="attributeImage"
+        />
+      </div>
+    </div>
+
+    <div class="form-line">
+      <div class="form-field">
+        <label for="level">Level:</label>
+        <input
+          type="number"
+          formControlName="level"
+        />
+      </div>
+
+      <div class="form-field">
+        <label for="type">Type:</label>
+        <input
+          type="text"
+          formControlName="type"
+        />
+      </div>
+    </div>
+
+    <div class="form-line">
+      <div class="form-field">
+        <label for="cardDescription">Description:</label>
+        <textarea
+          formControlName="cardDescription"
+        ></textarea>
+      </div>
+
+      <div class="atk-def">
+        <div class="form-field">
+          <label for="atk">Atk:</label>
+          <input
+            type="number"
+            formControlName="atk"
+          />
+        </div>
+
+        <div class="form-field">
+          <label for="def">Def:</label>
+          <input
+            type="number"
+            formControlName="def"
+          />
+        </div>
+      </div>
+    </div>
+
+    <button>Update</button>
+  </form>
+</div>

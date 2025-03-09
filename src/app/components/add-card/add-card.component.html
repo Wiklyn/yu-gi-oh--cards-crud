@@ -1,0 +1,96 @@
+<div class="container">
+  <h2>Add Card</h2>
+  <form [formGroup]="addCardForm" (ngSubmit)="onSubmit()">
+    <div class="form-line">
+      <div class="form-field">
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          formControlName="name"
+          placeholder="Armored Lizard"
+        />
+      </div>
+
+      <div class="form-field">
+        <label for="attribute">Attribute:</label>
+        <input
+          type="text"
+          formControlName="attribute"
+          placeholder="Earth"
+        />
+      </div>
+    </div>
+
+    <div class="form-line">
+      <div class="form-field">
+        <label for="image">Image URL:</label>
+        <input
+          type="url"
+          formControlName="image"
+          placeholder="https://uploads1.yugioh.com/card_images/1896/detail/2261.jpg?1385102591"
+        />
+      </div>
+
+      <div class="form-field">
+        <label for="attributeImage">Attribute Image URL:</label>
+        <input
+          type="url"
+          formControlName="attributeImage"
+          placeholder="https://www.db.yugioh-card.com/yugiohdb/external/image/parts/attribute/attribute_icon_earth.png"
+        />
+      </div>
+    </div>
+
+    <div class="form-line">
+      <div class="form-field">
+        <label for="level">Level:</label>
+        <input
+          type="number"
+          formControlName="level"
+          placeholder="4"
+        />
+      </div>
+
+      <div class="form-field">
+        <label for="type">Type:</label>
+        <input
+          type="text"
+          formControlName="type"
+          placeholder="Reptile / Normal"
+        />
+      </div>
+    </div>
+
+    <div class="form-line">
+      <div class="form-field">
+        <label for="description">Description:</label>
+        <textarea
+          formControlName="cardDescription"
+          placeholder="A lizard with a very tough hide and a vicious bite."
+        ></textarea>
+      </div>
+
+      <div class="atk-def">
+        <div class="form-field">
+          <label for="atk">Atk:</label>
+          <input
+            type="number"
+            formControlName="atk"
+            placeholder="1500"
+          />
+        </div>
+
+        <div class="form-field">
+          <label for="def">Def:</label>
+          <input
+            type="number"
+            formControlName="def"
+            placeholder="1200"
+          />
+        </div>
+      </div>
+    </div>
+
+    <button>Add</button>
+  </form>
+</div>

@@ -1,0 +1,62 @@
+<div class="card-and-data">
+  <div class="full-card">
+    <div class="card-name-attribute">
+      <div class="card-name">
+        <span>{{ cardDetails.name }}</span>
+      </div>
+      <div class="card-attribute">
+        <img
+          [src]="cardDetails.attributeImage"
+          [alt]="cardDetails.attribute"
+          class="card-attribute-img"
+        />
+      </div>
+    </div>
+    <div class="card-level">
+      @for (level of levelArray; track $index) {
+      <img [src]="level" alt="Level Symbol" class="card-level-img" />
+      }
+    </div>
+    <div class="card-image">
+      <img
+        [src]="cardDetails.image"
+        [alt]="cardDetails.name"
+        class="card-img"
+      />
+    </div>
+    <div class="card-type-description-atk-def">
+      <div class="card-type">[ {{ cardDetails.type | uppercase }} ]</div>
+      <div class="card-description">Isso aqui tá quebrando</div>
+      <div class="card-atk-def">
+        <div class="card-atk">ATK / {{ cardDetails.atk }}</div>
+        <div class="card-def">DEF / {{ cardDetails.def }}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="full-data">
+    <div class="data-card-name">{{ cardDetails.name }}</div>
+    <div class="data-card-attribute">
+      <img
+        [src]="cardDetails.attributeImage"
+        [alt]="cardDetails.attribute"
+        class="data-card-attribute-img"
+      />
+      <span>{{ cardDetails.attribute }}</span>
+    </div>
+    <div class="data-card-level">{{ cardDetails.level }}</div>
+    <div class="data-card-type">{{ cardDetails.type }}</div>
+    <div class="data-card-description">
+      {{ cardDetails.cardDescription }}
+    </div>
+    <div class="data-atk-def">
+      <div class="data-atk">ATK: {{ cardDetails.atk }}</div>
+      <div class="data-def">DEF: {{ cardDetails.def }}</div>
+    </div>
+  </div>
+</div>
+
+<div class="button">
+  <button (click)="showUpdateForm(cardDetails.id)">Update Card</button>
+  <button (click)="deleteCard(cardDetails.id)">Delete Card</button>
+</div>

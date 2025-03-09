@@ -2,6 +2,11 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.5.
 
+## Links
+
+- [imagens](https://www.yugioh.com/cards?season=1&show_id=1)
+- dados: Clicar em `View TCG Info` quando clicar na imagem da carta
+
 ## Development server
 
 To start a local development server, run:
