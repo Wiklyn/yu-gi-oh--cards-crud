@@ -1,64 +1,77 @@
-# YugiohFront
+# YU-GI-OH! Cards (CRUD)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.5.
+This project was generated using
+[Angular CLI](https://github.com/angular/angular-cli) version 19.1.5.
 
-## Links
+## Index
 
-- [imagens](https://www.yugioh.com/cards?season=1&show_id=1)
-- dados: Clicar em `View TCG Info` quando clicar na imagem da carta
+- [YU-GI-OH! Cards (CRUD)](#yu-gi-oh-cards-crud)
+  - [Index](#index)
+  - [About the project](#about-the-project)
+  - [Technologies Used](#technologies-used)
+  - [Project Structure](#project-structure)
+    - [Created Components](#created-components)
+    - [Backend](#backend)
+    - [Future Improvements](#future-improvements)
+  - [Reference](#reference)
 
-## Development server
+## About the project
 
-To start a local development server, run:
+This project was developed with the goal of learning how to create a CRUD
+(Create, Read, Update, Delete) in Angular 19. During development, concepts such
+as routing, HTTP requests, interfaces, services, and standalone components were
+explored.
 
-```bash
-ng serve
+## Technologies Used
+
+- Angular 19
+  - Routing
+  - HttpClient
+  - Interfaces
+  - Services
+  - Standalone Components
+- json-server
+- Puce CSS3 (for UI styling)
+
+## Project Structure
+
+The file structure is organized as follows:
+
+```terminal
+.
+├── app/
+│   ├── components/
+│   ├── models
+│   └── services
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Files were generated using the Angular CLI.
 
-## Code scaffolding
+### Created Components
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- AddCardComponent: Form to add new cards.
+- CardDetailComponent: Displays the details of a specific card.
+- CardListComponent: Lists all registered cards.
+- PageNotFoundComponent: Displayed when the requested route does not exist.
+- UpdateCardComponent: Form to update an existing card.
 
-```bash
-ng generate component component-name
-```
+### Backend
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+The backend used was json-server, which allows simulating a RESTful API with a
+local database. The database is included in the project directory.
 
-```bash
-ng generate --help
-```
+### Future Improvements
 
-## Building
+- Fix styling issues on some pages.
+- Replace **json-server** with a real backend:
+  - Database: **SQL Server** or **PostgreSQL**.
+  - API developed in **.NET 8**.
 
-To build the project run:
+## Reference
 
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+This project was inspired by the video
+[#21 - Angular 19 Tutorials | Angular 19 CRUD Operations with JSON Server](https://youtu.be/1Cr4cS6JkYQ?si=SuOyalsr3kgP6Fn3),
+from the [Angular 19 Tutorials](https://youtube.com/playlist?list=PLBz0Y_rVMoZi8a8bRsK4Vr3c2SFrmhhoL&si=-piv8oF-zmq68Hii)
+playlist on the [FED Learning channel](https://www.youtube.com/@FEDLearning).
+Additionally, I also studied the official Angular documentation to deepen my
+understanding of the concepts.
