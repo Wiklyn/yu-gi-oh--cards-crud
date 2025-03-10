@@ -31,11 +31,11 @@ export class CardDetailComponent implements OnInit {
 
     this._cardService.getDataById(this.cardId.id).subscribe((res) => {
       this.cardDetails = res;
-    });
 
-    this.levelArray = this._cardService.createLevelArray(
-      this.cardDetails.level
-    );
+      this.levelArray = this._cardService.createLevelArray(
+        this.cardDetails.level
+      );
+    });
   }
 
   showUpdateForm(id: number) {

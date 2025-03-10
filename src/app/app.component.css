@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   background: #333;
-  padding: 15px 20px;
+  padding: 1rem 1.5rem;
   color: white;
 }
 
@@ -13,13 +13,13 @@
 }
 
 .nav-links li {
-  margin: 0 15px;
+  margin: 0 1rem;
 }
 
 .nav-links a {
   color: white;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1.2rem;
 }
 
 .active {

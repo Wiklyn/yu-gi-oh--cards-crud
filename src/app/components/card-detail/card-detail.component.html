@@ -26,7 +26,7 @@
     </div>
     <div class="card-type-description-atk-def">
       <div class="card-type">[ {{ cardDetails.type | uppercase }} ]</div>
-      <div class="card-description">Isso aqui tá quebrando</div>
+      <div class="card-description">{{ cardDetails.cardDescription }}</div>
       <div class="card-atk-def">
         <div class="card-atk">ATK / {{ cardDetails.atk }}</div>
         <div class="card-def">DEF / {{ cardDetails.def }}</div>
@@ -44,7 +44,7 @@
       />
       <span>{{ cardDetails.attribute }}</span>
     </div>
-    <div class="data-card-level">{{ cardDetails.level }}</div>
+    <div class="data-card-level">Level {{ cardDetails.level }}</div>
     <div class="data-card-type">{{ cardDetails.type }}</div>
     <div class="data-card-description">
       {{ cardDetails.cardDescription }}
