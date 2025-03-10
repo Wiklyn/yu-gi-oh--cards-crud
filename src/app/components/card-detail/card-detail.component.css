@@ -205,13 +205,25 @@
 button {
   width: 10rem;
   padding: 0.7rem;
-  background: #333;
   color: white;
   border: none;
   border-radius: 0.4rem;
   cursor: pointer;
+  font-size: 1.2rem;
 }
 
-button:hover {
-  background: #555;
+#update {
+  background-color: #2E4A7D;
+}
+
+#update:hover {
+  background-color: #152646;
+}
+
+#delete {
+  background-color: #8B2E2E;
+}
+
+#delete:hover {
+  background-color: #691212;
 }
