@@ -115,18 +115,18 @@ local database. The database is included in the project directory.
 
 The main page is the card list page:
 
-![Main Page - Card List Page](screenshots\MainPage-CardList.png "Main Page - Card List Page")
+![Main Page - Card List Page](screenshots/MainPage-CardList.png "Main Page - Card List Page")
 
 When you click in any card, you are redirected to the Card Details page:
 
-![Card Details Page](screenshots\CardDetails.png "Card Details Page")
+![Card Details Page](screenshots/CardDetails.png "Card Details Page")
 
 In this page tou can Update or Delete the card. In case you click on the Delete
 button, the card will be deleted and you will be redirected to the main page. In
 case you click in the Update button you will be redirected to the Update Form
 Page:
 
-![Update Form Page](screenshots\UpdateForm.png "Update Form Page")
+![Update Form Page](screenshots/UpdateForm.png "Update Form Page")
 
 After finishing the changes and clicking on the Update button, you will be
 redirected to the main page.
@@ -134,14 +134,14 @@ redirected to the main page.
 In case you want to Add a card, you can click on the `Add Card` link on the
 navbar and you will be redirected to the Add Form Page:
 
-![Add Form Page](screenshots\AddForm.png "Add Form Page")
+![Add Form Page](screenshots/AddForm.png "Add Form Page")
 
 After typing the card data and clicking on the Add button, you will be
 redirected to the main page.
 
 In case you try to enter in a unmapped url, you will see tha Not Found Page:
 
-![Not Found Page](screenshots\PageNotFound.png "Not Found Page")
+![Not Found Page](screenshots/PageNotFound.png "Not Found Page")
 
 ### Future Improvements
 
