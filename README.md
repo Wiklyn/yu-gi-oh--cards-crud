@@ -15,6 +15,7 @@ This project was generated using
   - [Project Structure](#project-structure)
     - [Created Components](#created-components)
     - [Backend](#backend)
+    - [Screenshots](#screenshots)
     - [Future Improvements](#future-improvements)
   - [Reference](#reference)
 
@@ -109,6 +110,38 @@ Files were generated using the Angular CLI.
 
 The backend used was json-server, which allows simulating a RESTful API with a
 local database. The database is included in the project directory.
+
+### Screenshots
+
+The main page is the card list page:
+
+![Main Page - Card List Page](public\screenshots\MainPage-CardList.png "Main Page - Card List Page")
+
+When you click in any card, you are redirected to the Card Details page:
+
+![Card Details Page](public\screenshots\CardDetails.png "Card Details Page")
+
+In this page tou can Update or Delete the card. In case you click on the Delete
+button, the card will be deleted and you will be redirected to the main page. In
+case you click in the Update button you will be redirected to the Update Form
+Page:
+
+![Update Form Page](public\screenshots\UpdateForm.png "Update Form Page")
+
+After finishing the changes and clicking on the Update button, you will be
+redirected to the main page.
+
+In case you want to Add a card, you can click on the `Add Card` link on the
+navbar and you will be redirected to the Add Form Page:
+
+![Add Form Page](public\screenshots\AddForm.png "Add Form Page")
+
+After typing the card data and clicking on the Add button, you will be
+redirected to the main page.
+
+In case you try to enter in a unmapped url, you will see tha Not Found Page:
+
+![Not Found Page](public\screenshots\PageNotFound.png "Not Found Page")
 
 ### Future Improvements
 
