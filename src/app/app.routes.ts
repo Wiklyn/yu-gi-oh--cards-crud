@@ -8,8 +8,8 @@ import { AddCardComponent } from './components/add-card/add-card.component';
 export const routes: Routes = [
   { path: 'card-list', component: CardListComponent },
   { path: 'add-card', component: AddCardComponent },
-  { path: '', component: CardListComponent },
+  { path: '', redirectTo: 'card-list', pathMatch: 'full' },
   { path: 'card-details/:id', component: CardDetailComponent },
   { path: 'update-card/:id', component: UpdateCardComponent },
-  { path: '**', component: PageNotFoundComponent }
+  { path: '**', component: PageNotFoundComponent },
 ];
