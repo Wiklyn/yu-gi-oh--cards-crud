@@ -2,9 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #333;
+  background: #C7A86F;
   padding: 1rem 1.5rem;
-  color: white;
 }
 
 .nav-links {
@@ -16,12 +15,17 @@
   margin: 0 1rem;
 }
 
-.nav-links a {
-  color: white;
+a {
+  color: #5B3E26;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0.5rem;
 }
 
 .active {
   font-weight: bold;
+  color: #5B3E26;
+  border: 2px solid #5B3E26;
+  border-radius: 0.4rem;
 }
