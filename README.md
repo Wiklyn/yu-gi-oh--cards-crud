@@ -9,6 +9,9 @@ This project was generated using
   - [Index](#index)
   - [About the project](#about-the-project)
   - [Technologies Used](#technologies-used)
+  - [How to Use](#how-to-use)
+    - [Prerequisites](#prerequisites)
+    - [Setup and Run](#setup-and-run)
   - [Project Structure](#project-structure)
     - [Created Components](#created-components)
     - [Backend](#backend)
@@ -31,7 +34,54 @@ explored.
   - Services
   - Standalone Components
 - json-server
-- Puce CSS3 (for UI styling)
+- Pure CSS3 (for UI styling)
+
+## How to Use
+
+Follow these steps to set up and run the project:
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- **Node.js** (Download and install from [nodejs.org](nodejs.org))
+- **Angular CLI** (Install globally with `npm install -g @angular/cli`)
+- **json-server** (Install globally with `npm install -g json-server`)
+
+### Setup and Run
+
+1. **Clone the repository:**
+
+   ```terminal
+   git clone https://github.com/Wiklyn/yu-gi-oh--cards-crud
+   ```
+
+2. **Open the project in an IDE (e.g., Visual Studio Code, WebStorm, or any preferred IDE).**
+3. **Install dependencies:**
+
+   ```terminal
+   npm install
+   ```
+
+4. **Start the json-server:**
+
+   ```terminal
+   json-server --watch db.json
+   ```
+
+5. **Run the Angular project:**
+
+   ```terminal
+   ng serve
+   ```
+
+   or
+
+   ```terminal
+   ng s
+   ```
+
+6. Open your browser and go to `http://localhost:4200/` to view the application.
 
 ## Project Structure
 
