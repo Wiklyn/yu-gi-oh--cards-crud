@@ -92,8 +92,8 @@ The file structure is organized as follows:
 .
 ├── app/
 │   ├── components/
-│   ├── models
-│   └── services
+│   ├── models/
+│   └── services/
 ```
 
 Files were generated using the Angular CLI.
