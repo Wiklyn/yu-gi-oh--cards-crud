@@ -146,7 +146,7 @@ In case you try to enter in a unmapped url, you will see tha Not Found Page:
 ### Future Improvements
 
 - Fix styling issues and making the pages responsive.
-- Replace **json-server** with a real backend:
+- Replace **json-server** with a real backend and add data validation:
   - Database: **SQL Server** or **PostgreSQL**.
   - API developed in **.NET 8**.
 
