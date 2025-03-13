@@ -1,64 +1,76 @@
-<div class="card-and-data">
-  <div class="full-card">
-    <div class="card-name-attribute">
-      <div class="card-name">
-        <span>{{ cardDetails.name }}</span>
+<main>
+  <article class="card">
+    <section class="card__image">
+      <div class="card__image__title">
+        <div class="card__image__name-and-attribute-icon">
+          <p class="card__image__name">{{ cardDetails.name }}</p>
+          <picture class="card__image__attribute-icon"
+            ><img
+              [src]="cardDetails.attributeImage"
+              [alt]="cardDetails.attribute"
+              width="80"
+              height="80"
+          /></picture>
+        </div>
       </div>
-      <div class="card-attribute">
-        <img
-          [src]="cardDetails.attributeImage"
-          [alt]="cardDetails.attribute"
-          class="card-attribute-img"
-        />
+      <div class="card__image__level">
+        @for (level of levelArray; track $index) {
+        <picture class="card__image__level__icon"
+          ><img
+            [src]="level"
+            alt="A simple yellow star draw in a golden sphere."
+            width="80"
+            height="80"
+        /></picture>
+        }
       </div>
-    </div>
-    <div class="card-level">
-      @for (level of levelArray; track $index) {
-      <img [src]="level" alt="Level Symbol" class="card-level-img" />
-      }
-    </div>
-    <div class="card-image">
-      <img
-        [src]="cardDetails.image"
-        [alt]="cardDetails.name"
-        class="card-img"
-      />
-    </div>
-    <div class="card-type-description-atk-def">
-      <div class="card-type">[ {{ cardDetails.type | uppercase }} ]</div>
-      <div class="card-description">{{ cardDetails.cardDescription }}</div>
-      <div class="card-atk-def">
-        <div class="card-atk">ATK / {{ cardDetails.atk }}</div>
-        <div class="card-def">DEF / {{ cardDetails.def }}</div>
+      <div class="card__image__photo-area">
+        <picture class="card__image__photo"
+          ><img
+            [src]="cardDetails.image"
+            [alt]="cardDetails.name"
+            width="416"
+            height="416"
+        /></picture>
       </div>
-    </div>
-  </div>
-
-  <div class="full-data">
-    <div class="data-card-name">{{ cardDetails.name }}</div>
-    <div class="data-card-attribute">
-      <img
-        [src]="cardDetails.attributeImage"
-        [alt]="cardDetails.attribute"
-        class="data-card-attribute-img"
-      />
-      <span>{{ cardDetails.attribute }}</span>
-    </div>
-    <div class="data-card-level">Level {{ cardDetails.level }}</div>
-    <div class="data-card-type">{{ cardDetails.type }}</div>
-    <div class="data-card-description">
-      {{ cardDetails.cardDescription }}
-    </div>
-    <div class="data-atk-def">
-      <div class="data-atk">ATK: {{ cardDetails.atk }}</div>
-      <div class="data-def">DEF: {{ cardDetails.def }}</div>
-    </div>
-  </div>
-</div>
-
-<div class="button">
-  <button id="update" (click)="showUpdateForm(cardDetails.id)">
-    Update Card
-  </button>
-  <button id="delete" (click)="deleteCard(cardDetails.id)">Delete Card</button>
-</div>
+      <div class="card__image__metadata">
+        <p class="card__image__metadata__type">[ {{ cardDetails.type }} ]</p>
+        <p class="card__image__metadata__description">
+          {{ cardDetails.cardDescription }}
+        </p>
+        <div class="card__image__atk-def">
+          <p>ATK / {{ cardDetails.atk }}</p>
+          <p>DEF / {{ cardDetails.def }}</p>
+        </div>
+      </div>
+    </section>
+    <section class="card__data-and-buttons">
+      <div class="card__data">
+        <h1>{{ cardDetails.name }}</h1>
+        <div class="card__data__attribute-level">
+          <div class="card__data__attribute flex-group">
+            <picture class="card__data__attribute-icon"
+              ><img
+                [src]="cardDetails.attributeImage"
+                [alt]="cardDetails.attribute"
+                width="80"
+                height="80"
+            /></picture>
+            <p>Wind</p>
+          </div>
+          <p class="card__data__level">Level {{ cardDetails.level }}</p>
+        </div>
+        <p class="card__data__type">{{ cardDetails.type }}</p>
+        <p class="card__data__description">{{ cardDetails.cardDescription }}</p>
+        <div class="card__data__atk-def flex-group">
+          <p>ATK: {{ cardDetails.atk }}</p>
+          <p>DEF: {{ cardDetails.def }}</p>
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="button update">Update Card</button>
+        <button class="button delete">Delete Card</button>
+      </div>
+    </section>
+  </article>
+</main>
