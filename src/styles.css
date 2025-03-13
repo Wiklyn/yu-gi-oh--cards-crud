@@ -1,4 +1,123 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "Cinzel";
+  src: url("/assets/fonts/Cinzel/Cinzel-VariableFont_wght.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Lora";
+  src: url("/assets/fonts/Lora/Lora-Italic-VariableFont_wght.ttf")
+    format("truetype");
+}
+
+:root {
+  --clr-primary-800: hsl(44, 55%, 31%);
+  --clr-primary-600: hsl(44, 52%, 38%);
+  --clr-primary-400: hsl(44, 49%, 53%);
+  --clr-primary-300: hsl(44, 80%, 67%);
+  --clr-primary-200: hsl(44, 78%, 75%);
+
+  --clr-secondary-400: hsl(31, 37%, 67%);
+  --clr-secondary-300: hsl(32, 55%, 85%);
+  --clr-secondary-200: hsl(30, 38%, 92%);
+
+  --clr-tertiary-600: hsl(251, 38%, 14%);
+  --clr-tertiary-400: hsl(220, 54%, 18%);
+  --clr-tertiary-300: hsl(219, 50%, 27%);
+  --clr-tertiary-200: hsl(219, 56%, 35%);
+
+  --ff-primary: "Times New Roman", Times, serif;
+  --ff-secondary: "Cinzel", serif;
+  --ff-tertiary: "Lora", serif;
+
+  --fw-regular: 500;
+  --fw-bold: 700;
+  --fw-bolder: 900;
+}
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
 body {
-  background-color: #f8f8f8;
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/* 9. Create a root stacking context */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* Some sensible defaults for img elements */
+img {
+  max-width: 100%; /* [1] */
+  height: auto; /* [1] */
+  vertical-align: middle; /* [2] */
+  font-style: italic; /* [3] */
+  background-repeat: no-repeat; /* [4] */
+  background-size: cover; /* [4] */
+  shape-margin: 0.75rem; /* [5] */
+}
+
+body {
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-regular);
+  font-size: 1rem;
+  background-color: var(--clr-secondary-200);
 }
