@@ -1,16 +1,16 @@
 {
   "CardList": [
     {
-      "id": 1,
       "name": "Ancient Lamp",
       "attribute": "Wind",
+      "image": "https://uploads4.yugioh.com/card_images/2638/detail/4659.jpg?1385126697",
       "attributeImage": "https://www.db.yugioh-card.com/yugiohdb/external/image/parts/attribute/attribute_icon_wind.png",
       "level": 3,
-      "image": "https://uploads4.yugioh.com/card_images/2638/detail/4659.jpg?1385126697",
       "type": "Spellcaster / Effect",
       "cardDescription": "During your Main Phase: You can Special Summon \"La Jinn the Mystical Genie of the Lamp\" from your hand. This card must be face-up on the field to activate and to resolve this effect. Before damage calculation, if this card is being attacked by an opponent's monster, and was face-down at the start of the Damage Step: You can target 1 monster your opponent controls, except the attacking monster; change the attack target to that opponent's monster and perform damage calculation.",
       "atk": 900,
-      "def": 1400
+      "def": 1400,
+      "id": 1
     },
     {
       "id": 2,
@@ -35,6 +35,54 @@
       "atk": 1500,
       "def": 0,
       "id": 3
+    },
+    {
+      "name": "Axe Raider",
+      "attribute": "Earth",
+      "image": "https://uploads1.yugioh.com/card_images/2326/detail/2268.jpg?1385103464",
+      "attributeImage": "https://www.db.yugioh-card.com/yugiohdb/external/image/parts/attribute/attribute_icon_earth.png",
+      "level": 4,
+      "type": "Warrior / Normal",
+      "cardDescription": "An axe-wielding monster of tremendous strength and agility.",
+      "atk": 1700,
+      "def": 1150,
+      "id": 4
+    },
+    {
+      "name": "Baby Dragon",
+      "attribute": "Wind",
+      "image": "https://uploads2.yugioh.com/card_images/1787/detail/2785.jpg?1385102370",
+      "attributeImage": "https://www.db.yugioh-card.com/yugiohdb/external/image/parts/attribute/attribute_icon_wind.png",
+      "level": 3,
+      "type": "Dragon / Normal",
+      "cardDescription": "Much more than just a child, this dragon is gifted with untapped power.",
+      "atk": 1200,
+      "def": 700,
+      "id": 5
+    },
+    {
+      "name": "Black Skull Dragon",
+      "attribute": "",
+      "image": "https://uploads4.yugioh.com/card_images/1507/detail/2794.jpg?1385101805",
+      "attributeImage": "https://www.db.yugioh-card.com/yugiohdb/external/image/parts/attribute/attribute_icon_dark.png",
+      "level": 9,
+      "type": "Dragon / Fusion",
+      "cardDescription": "\"Summoned Skull\" + \"Red-Eyes Black Dragon\"\n\n(This card is always treated as an \"Archfiend\" card.)",
+      "atk": 3200,
+      "def": 2500,
+      "id": 6
+    },
+    {
+      "name": "Barox",
+      "attribute": "Dark",
+      "image": "https://uploads2.yugioh.com/card_images/3194/detail/4178.jpg?1385127749",
+      "attributeImage": "https://www.db.yugioh-card.com/yugiohdb/external/image/parts/attribute/attribute_icon_dark.png",
+      "level": 5,
+      "type": "Fiend / Fusion",
+      "cardDescription": "\"Frenzied Panda\" + \"Ryu-Kishin\"",
+      "atk": 1380,
+      "def": 1530,
+      "id": 7
     }
   ]
 }
