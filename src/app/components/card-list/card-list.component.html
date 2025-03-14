@@ -1,10 +1,20 @@
-<h1 class="title">Card List</h1>
+<main>
+  <h1 class="title">Card List</h1>
 
-<div class="cards">
-  @for (card of cardList; track card.id) {
-  <a class="card-name-image" (click)="showCardDetails(card.id)">
-    <span class="card-name">{{ card.name }}</span>
-    <img [src]="card.image" [alt]="card.name" class="card" />
-  </a>
-  }
-</div>
+  <div class="cards">
+    @for (card of cardList; track card.id) {
+    <a class="cards__card-name-and-image" (click)="showCardDetails(card.id)">
+      <p class="cards__card-name">{{ card.name }}</p>
+      <picture class="cards__card-image">
+        <img
+          [src]="card.image"
+          [alt]="card.name"
+          class="card"
+          height="416"
+          width="416"
+        />
+      </picture>
+    </a>
+    }
+  </div>
+</main>

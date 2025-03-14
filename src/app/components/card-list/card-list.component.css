@@ -1,14 +1,19 @@
-.title {
+h1 {
   text-align: center;
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-bolder);
+  padding-block: 2rem;
 }
 
 .cards {
   width: 80rem;
-  margin: auto;
+  margin-block: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  /* background-color: aqua; */
+
 }
 
 a {
@@ -17,7 +22,7 @@ a {
   cursor: pointer;
 }
 
-.card-name-image {
+.cards__card-name-and-image {
   min-width: 15%;
   max-width: 15%;
   height: fit-content;
@@ -30,11 +35,12 @@ a {
   margin: 0 1rem 2.5rem 1rem;
 }
 
-.card-name {
-  font-size: 1.3rem;
+.cards__card-name {
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-bold);
   margin: 0.2rem auto;
 }
 
-.card {
+.cards__card-image {
   width: 85%;
 }
