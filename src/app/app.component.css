@@ -1,18 +1,20 @@
+header {
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-regular);
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #C7A86F;
+  background: var(--clr-primary-400);
   padding: 1rem 1.5rem;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-}
-
-.nav-links li {
-  margin: 0 1rem;
+  gap: 2rem;
 }
 
 a {
@@ -24,7 +26,7 @@ a {
 }
 
 .active {
-  font-weight: bold;
+  font-weight: var(--fw-bold);
   color: #5B3E26;
   border: 0.1rem solid #5B3E26;
   border-radius: 0.4rem;
