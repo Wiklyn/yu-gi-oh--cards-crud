@@ -68,8 +68,12 @@
         </div>
       </div>
       <div class="buttons">
-        <button class="button update">Update Card</button>
-        <button class="button delete">Delete Card</button>
+        <button class="button update" (click)="showUpdateForm(cardDetails.id)">
+          Update Card
+        </button>
+        <button class="button delete" (click)="deleteCard(cardDetails.id)">
+          Delete Card
+        </button>
       </div>
     </section>
   </article>

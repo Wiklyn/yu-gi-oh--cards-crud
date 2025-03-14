@@ -211,11 +211,11 @@ h1 {
 }
 
 .update {
-  background-color: #2e4a7d;
+  background-color: var(--clr-tertiary-200);
 }
 
 .update:hover {
-  background-color: #152646;
+  background-color: var(--clr-tertiary-400);
 }
 
 .delete {
@@ -223,5 +223,5 @@ h1 {
 }
 
 .delete:hover {
-  background-color: #691212;
+  background-color: #550f0f;
 }
