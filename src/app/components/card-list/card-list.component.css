@@ -7,7 +7,7 @@ h1 {
 
 .cards {
   width: 80rem;
-  margin-block: auto;
+  margin-inline: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
