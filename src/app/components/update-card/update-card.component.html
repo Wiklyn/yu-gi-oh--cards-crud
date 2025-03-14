@@ -1,87 +1,74 @@
-<div class="container">
-  <h2>Update Card</h2>
-  <form [formGroup]="updateCardForm" (ngSubmit)="onSubmit()">
-    <div class="form-line">
-      <div class="form-field">
-        <label for="name">Name:</label>
+<main>
+  <h1>Update Card</h1>
+  <form class="form" [formGroup]="updateCardForm" (ngSubmit)="onSubmit()">
+    <div class="form__wrapper">
+      <div class="form__wrapper__field">
+        <label>Name:</label>
         <input
           type="text"
           formControlName="name"
+          placeholder="Armored Lizard"
         />
       </div>
 
-      <div class="form-field">
-        <label for="attribute">Attribute:</label>
-        <input
-          type="text"
-          formControlName="attribute"
-        />
+      <div class="form__wrapper__field">
+        <label>Attribute:</label>
+        <input type="text" formControlName="attribute" placeholder="Earth" />
       </div>
-    </div>
 
-    <div class="form-line">
-      <div class="form-field">
-        <label for="image">Image URL:</label>
+      <div class="form__wrapper__field url">
+        <label>Image URL:</label>
         <input
           type="url"
           formControlName="image"
+          placeholder="https://uploads1.yugioh.com/card_images/1896/detail/2261.jpg?1385102591"
         />
       </div>
 
-      <div class="form-field">
-        <label for="attributeImage">Attribute Image URL:</label>
+      <div class="form__wrapper__field url">
+        <label>Attribute Image URL:</label>
         <input
           type="url"
           formControlName="attributeImage"
-        />
-      </div>
-    </div>
-
-    <div class="form-line">
-      <div class="form-field">
-        <label for="level">Level:</label>
-        <input
-          type="number"
-          formControlName="level"
+          placeholder="https://www.db.yugioh-card.com/yugiohdb/external/image/parts/attribute/attribute_icon_earth.png"
         />
       </div>
 
-      <div class="form-field">
-        <label for="type">Type:</label>
+      <div class="form__wrapper__field">
+        <label>Level:</label>
+        <input type="number" formControlName="level" placeholder="4" />
+      </div>
+
+      <div class="form__wrapper__field">
+        <label>Type:</label>
         <input
           type="text"
           formControlName="type"
+          placeholder="Reptile / Normal"
         />
       </div>
-    </div>
 
-    <div class="form-line">
-      <div class="form-field">
-        <label for="cardDescription">Description:</label>
+      <div class="form__wrapper__field">
+        <label>Description:</label>
         <textarea
           formControlName="cardDescription"
+          placeholder="A lizard with a very tough hide and a vicious bite."
         ></textarea>
       </div>
 
       <div class="atk-def">
-        <div class="form-field">
-          <label for="atk">Atk:</label>
-          <input
-            type="number"
-            formControlName="atk"
-          />
+        <div class="form__wrapper__field">
+          <label>Atk:</label>
+          <input type="number" formControlName="atk" placeholder="1500" />
         </div>
 
-        <div class="form-field">
-          <label for="def">Def:</label>
-          <input
-            type="number"
-            formControlName="def"
-          />
+        <div class="form__wrapper__field">
+          <label>Def:</label>
+          <input type="number" formControlName="def" placeholder="1200" />
         </div>
       </div>
     </div>
 
-    <button>Update</button>
+    <button>Update Card</button>
   </form>
-</div>
+</main>
